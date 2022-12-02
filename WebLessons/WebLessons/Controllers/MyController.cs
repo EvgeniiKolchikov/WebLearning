@@ -1,5 +1,6 @@
 using System.Text;
 using System.Text.Json;
+using System.IO;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebLessons.Controllers;
@@ -154,7 +155,88 @@ public class MyController : Controller
     // {
     //     return Ok("Everything is Ok");
     // }
+    // public IActionResult Result()
+    // {
+    //     return new HtmlResult("Привет! Друг мой, я твоя душа, у нас все получится, мы идем на верном пути," +
+    //                           "пусть мы сомнеаемся в себе и нам страшно, но удача это твоя способность в этом мире,ВПЕРЕД!");
+    // }
+
+    // public IActionResult GetPhysicalFile()
+    // {
+    //     var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "hello.txt");
+    //     var fileType = "text/plain";
+    //     var fileName = "hello.txt";
+    //
+    //     return PhysicalFile(filePath, fileType, fileName);
+    // }
+    //
+    // public IActionResult GetAllBytesFile()
+    // {
+    //     var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "hello.txt");
+    //     var fileBytes = System.IO.File.ReadAllBytes(filePath);
+    //     var fileType = "text/plain";
+    //     var fileName = "hello.txt";
+    //
+    //     return File(fileBytes, fileType, fileName);
+    // }
+    //
+    // public IActionResult GetStreamFile()
+    // {
+    //     var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "hello.txt");
+    //     var fs = new FileStream(filePath, FileMode.Open);
+    //     var fileType = "text/plain";
+    //     var fileName = "hello.txt";
+    //
+    //     return File(fs, fileType, fileName);
+    // }
+    //
+    // public IActionResult GetVirtualFile()
+    // {
+    //     var fileType = "application/octet-stream";
+    //     var fileName = "helloVirtual.txt";
+    //
+    //     return File("hello2.txt", fileType, fileName);
+    // }
+
+    // private readonly ITimeService timeService;
+    //
+    // public MyController(ITimeService timeServ)
+    // {
+    //     timeService = timeServ;
+    // }
+    // public string Index() => timeService.Time;
+
+    // public string Index([FromServices]ITimeService timeServ)
+    // {
+    //     return timeServ.Time;
+    // }
+    
+    // public string Index()
+    // {
+    //     var timeService = HttpContext.RequestServices.GetService<ITimeService>();
+    //     return timeService?.Time ?? "Undefined";
+    // }
+
+    // public IActionResult Index()
+    // {
+    //     ViewData["Message"] = "Hello Evgen!";
+    //     ViewBag.Message1 = "ViewBagMessage";
+    //     ViewBag.People = new List<string> { "Tom", "Max", "Jim" };
+    //     var letters = new List<string> { "KKK", "JJJ", "RRR" };
+    //     return View(letters);
+    // }
+
+    // public IActionResult Index() => View();
+    // public IActionResult About() => View();
+
+    [HttpGet]
+    public IActionResult Index() => View();
+
+    [HttpPost]
+    public string Index(string language) => $"Language: {language}";
+    
 }
 
 public record Error(string Message);
 public record Person(string Name, int Age);
+
