@@ -1,0 +1,68 @@
+@*@{
+    ViewData["Title"] = "AspNet Lesson";
+    ViewBag.Title1 = "ViewBagTitle";
+}
+@model List<string>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EvgenLesson</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewBag.Title1</h3>
+<h3>@ViewBag.Message1</h3>
+<p>
+    @ViewData["Message"]
+    @foreach (var pers in ViewBag.People)
+    {
+        <li>@pers</li>
+    }
+</p>
+
+<h3>Count: @Model.Count</h3>
+<ul>
+    @foreach (var l in Model)
+    {
+        <li>@l</li>
+    }
+</ul>
+
+</body>
+</html>*@
+@*
+@{
+    ViewBag.Title = "Index";
+}
+<h3>Index Content</h3>
+
+@section Footer
+{
+    Copyright© Evgen.com, @DateTime.Now.Year. All rights reserved
+}*@
+
+@*
+@{
+    var tom = new Person("Tom", 33);
+}
+<h2>Person data</h2>
+<h3>Name: @tom.Name</h3>
+<h3>Age: @tom.Age</h3>*@
+
+<h2>User Form</h2>
+<form method="post">
+    <p>
+        <label for="language">Выберите язык:</label>
+        <select name="language">
+            <option value="csharp">C#</option>
+            <option value="vbnet">Visual Basic.NET</option>
+            <option value="fsharp">F#</option>
+            <option value="typescript">TypeScript</option>
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Отправить" />
+    </p>
+</form>
