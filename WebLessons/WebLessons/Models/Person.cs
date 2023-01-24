@@ -1,6 +1,3 @@
 namespace WebLessons.Models;
 
-public class Person
-{
-    
-}
+public record class Person(int Id, string Name, int Age);

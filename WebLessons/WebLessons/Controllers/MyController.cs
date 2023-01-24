@@ -2,6 +2,7 @@ using System.Text;
 using System.Text.Json;
 using System.IO;
 using Microsoft.AspNetCore.Mvc;
+using WebLessons.Models;
 
 namespace WebLessons.Controllers;
 
@@ -229,14 +230,25 @@ public class MyController : Controller
     // public IActionResult Index() => View();
     // public IActionResult About() => View();
 
-    [HttpGet]
-    public IActionResult Index() => View();
+    // [HttpGet]
+    // public IActionResult Index() => View();
+    //
+    // [HttpPost]
+    // public string Index(string language) => $"Language: {language}";
 
-    [HttpPost]
-    public string Index(string language) => $"Language: {language}";
-    
+    List<Person> people = new List<Person>()
+    {
+        new Person(1,"Kimi",44),
+        new Person(2,"Hulkenberg",32),
+        new Person(3,"Max",25)
+    };
+
+    public IActionResult Index()
+    {
+        return View(people);
+    }
+
 }
 
 public record Error(string Message);
-public record Person(string Name, int Age);
 

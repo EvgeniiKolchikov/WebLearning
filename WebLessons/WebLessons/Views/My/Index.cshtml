@@ -50,7 +50,7 @@
 <h2>Person data</h2>
 <h3>Name: @tom.Name</h3>
 <h3>Age: @tom.Age</h3>*@
-
+@*
 <h2>User Form</h2>
 <form method="post">
     <p>
@@ -65,4 +65,16 @@
     <p>
         <input type="submit" value="Отправить" />
     </p>
-</form>
+</form>*@
+
+@using WebLessons.Models
+@model IEnumerable<Person>
+
+<h2>People</h2>
+<table class="table">
+    <tr><td>Id</td><td>Name</td><td>Age</td></tr>
+    @foreach (var p in Model)
+    {
+        <tr><td>@p.Id</td><td>@p.Name</td><td>@p.Age</td></tr>
+    }
+</table>
