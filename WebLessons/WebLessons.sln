@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigureLesson", "Configur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogLesson", "LogLesson\LogLesson.csproj", "{3394C1A2-0052-4EC5-8F67-6C30945AB705}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesHttpContextItemSessionLesson", "CookiesHttpContextItemSessionLesson\CookiesHttpContextItemSessionLesson.csproj", "{70270ACD-F86B-491F-8EAA-9A9A4415805A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpContextItemLesson", "HttpContextItemLesson\HttpContextItemLesson.csproj", "{70270ACD-F86B-491F-8EAA-9A9A4415805A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
