@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLessons", "WebLessons\We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigureLesson", "ConfigureLesson\ConfigureLesson.csproj", "{810EA0E0-EB30-4E35-9511-84336CACFE32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogLesson", "LogLesson\LogLesson.csproj", "{3394C1A2-0052-4EC5-8F67-6C30945AB705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesHttpContextItemSessionLesson", "CookiesHttpContextItemSessionLesson\CookiesHttpContextItemSessionLesson.csproj", "{70270ACD-F86B-491F-8EAA-9A9A4415805A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{810EA0E0-EB30-4E35-9511-84336CACFE32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{810EA0E0-EB30-4E35-9511-84336CACFE32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{810EA0E0-EB30-4E35-9511-84336CACFE32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3394C1A2-0052-4EC5-8F67-6C30945AB705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3394C1A2-0052-4EC5-8F67-6C30945AB705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3394C1A2-0052-4EC5-8F67-6C30945AB705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3394C1A2-0052-4EC5-8F67-6C30945AB705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70270ACD-F86B-491F-8EAA-9A9A4415805A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70270ACD-F86B-491F-8EAA-9A9A4415805A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70270ACD-F86B-491F-8EAA-9A9A4415805A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70270ACD-F86B-491F-8EAA-9A9A4415805A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
