@@ -1,0 +1,9 @@
+Now listening on: https://localhost:7174
+Now listening on: http://localhost:5293
+Application started. Press Ctrl+C to shut down.
+Hosting environment: Development
+Content root path: C:\Users\FIREWORKS\Desktop\WebLearning\WebLessons\LogLesson\
+/ 08.02.2023 20:11:34
+/ssdsd 08.02.2023 20:11:39
+/1 08.02.2023 20:11:56
+Application is shutting down...
