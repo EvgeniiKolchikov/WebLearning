@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogLesson", "LogLesson\LogL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpContextItemLesson", "HttpContextItemLesson\HttpContextItemLesson.csproj", "{70270ACD-F86B-491F-8EAA-9A9A4415805A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookiesLesson", "CookiesLesson\CookiesLesson.csproj", "{ABB2FA6C-E592-4735-A141-E8C0D05C0B4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{70270ACD-F86B-491F-8EAA-9A9A4415805A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70270ACD-F86B-491F-8EAA-9A9A4415805A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70270ACD-F86B-491F-8EAA-9A9A4415805A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB2FA6C-E592-4735-A141-E8C0D05C0B4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB2FA6C-E592-4735-A141-E8C0D05C0B4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB2FA6C-E592-4735-A141-E8C0D05C0B4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB2FA6C-E592-4735-A141-E8C0D05C0B4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
